@@ -4,7 +4,7 @@
  * Falua Temitope Oyewole.
  * faluatemitopeo@gmail.com
  * Web Developer
- * Date: 10/31/2017
+ * Date: 11/7/2017
  */
 ?>
         <!doctype html>
@@ -14,14 +14,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login Page &mdash; Laravel</title>
 </head>
 <body>
-    <div class="container">
-        @yield('content')
-    </div>
-
-        @yield('footer')
-</body>
-</html>
+    <header>
+        <nav></nav>
+    </header>

@@ -8,10 +8,6 @@ class LoginController extends Controller
 {
     public function login()
     {
-        $people = [];
-//        $people = [
-//            'Tayo', 'Tola', 'Ayo'
-//        ];
-        return view('login.login', compact('people'));
+        return view('login.login');
     }
 }
