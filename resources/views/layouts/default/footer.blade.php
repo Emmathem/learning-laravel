@@ -9,8 +9,8 @@
 ?>
 
 <footer>
-    <div class = "">
-        <h4>Emma Lava {{ date('Y') }}</h4>
+    <div class = "inner-container">
+        <h2>Emma Lava {{ date('Y') }}</h2>
     </div>
 </footer>
 </body>
