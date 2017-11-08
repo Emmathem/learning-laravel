@@ -1,39 +1,104 @@
-
 @import "_partials/_vars";
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 header {
-  width: 100%;
-  height: 3.5em;
-  background: $theme-black;
-}
-.clearfix {
-  clear: both;
-}
-footer{
-  bottom: 0;
-  height: 4em;
-  width: 100%;
-  background: $theme-black;
-  .inner-container {
-    margin: 5em;
-    padding: 1.2em 2em;
-    h3 {
-      color:$theme-white;
-      font-size: 1em;
-      text-space: 3px;
-      font-weight: 500;
+    width: 100%;
+    height: 3.5em;
+    top: 0;
+    position: relative;
+    background: $theme-black;
+    .container {
+        height: 100%;
+        width: 97%;
+        padding: 0;
+        margin: auto;
+        .logo {
+            height: auto;
+            float: left;
+            margin-right: 1.39em;
+            h3 {
+                font-size: 1.3em;
+                padding-bottom: 0;
+                font-weight: bold;
+                text-transform: capitalize;
+                margin: 0;
+                padding: 0.9em;
+                color: $theme-white;
+            }
+        }
     }
-    p {
-      margin-bottom:0px;
-      font-size:.9em;
-    }
-  }
 }
 
+nav {
+    margin: 0;
+    width: auto;
+    float: right;
+    height: auto;
+    padding: .9em;
+    display: inline-block;
+    ul {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: .9em;
+        margin: 0;
+        font-size: 1em;
+        float: left;
+        a {
+            color: $theme-white;
+            text-decoration: none;
+            font-stretch: expanded;
+            &:hover {
+                border-top: 2px solid $theme-p-white;
+                top: 0;
+                padding-top: 15px;
+                -webkit-transition: ease 0.5s all;
+                -moz-transition: ease 0.5s all;
+                -o-transition: ease 0.5s all;
+                transition: ease 0.5s all;
+            }
+            &:after {
+                border-bottom: 3px solid $theme-white;
+                background: $theme-blue;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background: $theme-black;
+    .inner-container {
+        text-align: center;
+        padding: 2em;
+        h3 {
+            color: $theme-white;
+            font-size: 1em;
+            text-space: 3px;
+            font-weight: 500;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 0px;
+            font-size: .9em;
+            color: $theme-blue;
+        }
+    }
+}

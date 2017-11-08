@@ -8,9 +8,10 @@
  */
 ?>
 
-<footer>
+<footer class = "clearfix">
     <div class = "inner-container">
-        <h2>Emma Lava {{ date('Y') }}</h2>
+        <h3>Emmathem Media Lava {{ date('Y') }}</h3>
+        <p>...adding beauty to your world</p>
     </div>
 </footer>
 </body>
