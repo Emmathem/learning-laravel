@@ -1,0 +1,170 @@
+@import "_partials/_vars";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  //height: 3.5em;
+  top: 0;
+  position: absolute;
+  z-index: 9;
+  //background: rgb(20,20,40);
+  background: transparent;
+  &.scrolled {
+    position: fixed;
+    background: $theme-black;
+  }
+  .container {
+    height: 100%;
+    width: 97%;
+    padding: 0;
+    background: white;
+    margin: auto;
+    .logo {
+      height: auto;
+      float: left;
+      margin-left: 15px;
+      h3 {
+        padding-bottom: 0;
+        font-weight: bold;
+        font-size: 1.4em;
+        text-transform: capitalize;
+        color: $theme-white;
+        letter-spacing:2px;
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  .btn {
+    padding: .5em .9em;
+    background: $theme-blue;
+  }
+  .btn-menu {
+    color: $theme-white;
+    font-size: .9em;
+    border: 1px solid rgba(0, 0, 0, .5);
+  }
+}
+
+.nav {
+  margin: 0;
+  width: auto;
+  margin-left: 1em;
+  float: right;
+  height: auto;
+  ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 18.4px;
+    margin: 0;
+    font-size: 1em;
+    float: left;
+    a {
+      padding: 10px;
+      color: $theme-white;
+      text-decoration: none;
+      font-stretch: expanded;
+      &:hover {
+        border-top: 2px solid $theme-p-white;
+        top: 0;
+        padding-top: 13.4px;
+        -webkit-transition: ease 0.5s all;
+        -moz-transition: ease 0.5s all;
+        -o-transition: ease 0.5s all;
+        transition: ease 0.5s all;
+      }
+      &:after {
+        border-bottom: 3px solid $theme-white;
+        background: $theme-blue;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+
+.main-wrapper {
+  margin: 3em;
+
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../images/11.jpg") no-repeat center;
+  background-size: cover;
+}
+.overlay {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #111;
+  opacity: 0.7;
+  left: 0;
+  right: 0;
+}
+.inner-section {
+  width: 88%;
+  margin: 10% auto 10px;
+  height: 100%;
+  right: 0;
+  left: 0;
+  border: 1px solid #111;
+  padding: 10px;
+  background: rgba(10,10,10,.8);
+  position: absolute;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background: $theme-black;
+  .inner-container {
+    text-align: center;
+    padding: 2em;
+    h3 {
+      color: $theme-white;
+      font-size: 1em;
+      text-space: 3px;
+      font-weight: 500;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0px;
+      font-size: .9em;
+      color: $theme-blue;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    float: right;
+  }
+}

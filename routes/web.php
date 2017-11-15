@@ -16,6 +16,6 @@
 //});
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/contact', 'PagesController@contact');
-
 Route::get('/login', 'LoginController@login');
+
+Route::resource('posts','PostsController');

@@ -1,8 +1,9 @@
 @extends('layouts.default.default')
 @section('content')
    <section class = "landing">
-       <div class = "inner-landing">
-           
-       </div>
+   <div class = "overlay"></div>
+      <div class = "inner-section">
+
+      </div>
    </section>
 @stop

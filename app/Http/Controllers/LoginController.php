@@ -8,6 +8,7 @@ class LoginController extends Controller
 {
     public function login()
     {
+        $title = "Login Testing";
         return view('login.login');
     }
 }
