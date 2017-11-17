@@ -23,7 +23,7 @@
         <header>
             <div class="container">
                 <div class="logo">
-                    <h3>LAVILEMMA</h3>
+                    <h3><a href="./">Lavilemma</a></h3>
                 </div>
                 <nav class = "nav">
 

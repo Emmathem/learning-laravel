@@ -10,7 +10,28 @@
 @extends('layouts.default.default')
 
 @section('content')
-    <div class = "main-wrapper">
+    <section class = "login-section">
+      {{--  <div class="big-circle"></div>--}}
+        <div class = "inner-login">
+            <div class="form-section">
+                <header>Authenticate Yourself</header>
+                <form class = "login-form" method="post" action="">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="text" name="useremail" class="form-input" placeholder="Enter Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="userpass" class="form-input" placeholder="Enter Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    {{--<div class = "main-wrapper">
         <div class="nav-2">
             <nav class = "menu">
                 <ul>
@@ -30,5 +51,5 @@
             </nav>
 
         </div>
-    </div>
+    </div>--}}
 @stop
