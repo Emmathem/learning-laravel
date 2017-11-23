@@ -14,7 +14,7 @@
       {{--  <div class="big-circle"></div>--}}
         <div class = "inner-login">
             <div class="form-section">
-                <header>Authenticate Yourself</header>
+                <header class = "header">Authenticate Yourself</header>
                 <form class = "login-form" method="post" action="">
                     <div class="form-group">
                         <label>Email Address</label>

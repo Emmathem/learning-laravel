@@ -16,6 +16,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/app.css">
         <title>{{ config('app.name', '&mdash; Laravel')}}</title>
     </head>
 
@@ -29,9 +30,10 @@
 
                     <ul>
                         <li><a href="./">Home</a></li>
-                        <li><a href="posts">Blog</a></li>
+                        <li><a href="../posts">Blog</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Contact</a></li>
+                        <li><a href="../posts/create">Create Post</a></li>
                     </ul>
                 </nav>
                 </div>

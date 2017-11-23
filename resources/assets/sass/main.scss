@@ -1,5 +1,6 @@
 @import "_partials/_vars";
 @import url('https://fonts.googleapis.com/css?family=Passion+One|Raleway|Titillium+Web');
+@import "_partials/_mixins";
 * {
   box-sizing: border-box;
 }
@@ -28,11 +29,7 @@ header {
   position: absolute;
   z-index: 9;
   background: rgba(20,20,40,.7);
-  -webkit-transition: ease 0.5s all;
-  -moz-transition: ease 0.5s all;
-  -ms-transition: ease 0.5s all;
-  -o-transition: ease 0.5s all;
-  transition: ease 0.5s all;
+  @include transition(0.5s, ease);
   //background: transparent;
   &.scrolled {
     position: fixed;
@@ -40,9 +37,7 @@ header {
   }
   .container {
     height: 100%;
-    width: 97%;
     padding: 0;
-    background: white;
     font-family: 'Passion One', cursive;
     margin: auto;
     .logo {
@@ -57,7 +52,6 @@ header {
         font-weight: bold;
         font-size: 1.4em;
         text-transform: capitalize;
-
         letter-spacing:2px;
       }
     }
@@ -148,6 +142,11 @@ header {
   left: 0;
   right: 0;
 }
+section {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
 .left-circle {
   padding: 15px;
   border-radius: 50%;
@@ -237,20 +236,76 @@ header {
   }
 }
 .post-section {
-  position: relative;
-  width: 95%;
+  background: $theme-white;
   height: auto;
   .inner-post {
     padding: 1em 1.2em;
-    margin:5% auto 0;
+    margin: 5% auto 0;
     h2 {
       text-align: center;
       font-size: 1.5em;
-      font-weight:lighter;
+      font-weight: lighter;
       color: $theme-blue;
     }
   }
-}
+  .post-form {
+    padding: 20px;
+    .form-control {
+      min-height: 3em;
+      padding: .9em 1.2em;
+      border-radius: 0;
+      border: 1px solid rgba(20, 30, 20, .4);
+    }
+    .btn {
+      padding: .7em 2.5em;
+      border-radius: 0px;
+      border: none;
+      box-shadow: rgba($theme-black, .3) 2px 0px 2px;
+    }
+    .btn-submit {
+      background: rgb(20, 20, 50);
+      color: $theme-white;
+      letter-spacing: 2px;
+      line-height: 25px;
+      &:hover {
+        border-radius: 50px;
+        @include transition(.5s, ease-in-out);
+      }
+    }
+  }
+  .small-btn {
+    .btn {
+      padding: .4em 1.5em;
+      border-radius: 50px;
+      border: none;
+      box-shadow: rgba($theme-black, .3) 2px 0px 2px;
+    }
+    .btn-details {
+      background: rgb(20, 20, 50);
+      color: $theme-white;
+      letter-spacing: 2px;
+      line-height: 25px;
+      &:hover {
+        border-radius: 50px;
+        @include transition(.5s, ease-in-out);
+      }
+    }
+    .btn-delete {
+      @extend .btn-details;
+      background: rgb(100, 20, 10);
+      color: $theme-white;
+      &:hover {
+        border-radius: 50px;
+        @include transition(.5s, ease-in-out);
+      }
+    }
+    .btn-edit {
+      @extend .btn-delete;
+      background: rgb(20, 90, 10);
+      color: $theme-white;
+    }
+  }
+  }
 .login-section {
   background: rgb(10,10,40);
   width: 100%;
@@ -262,6 +317,16 @@ header {
   width: 50%;
   height: auto;
   padding: 4em;
+  .form-section {
+    margin: 5% auto;
+    padding: 2em;
+    height: 40vh;
+    border: 1px solid #fff;
+    .header {
+      padding: .9em 1.5em;
+      background: $theme-blue;
+    }
+  }
 }
 footer {
   bottom: 0;

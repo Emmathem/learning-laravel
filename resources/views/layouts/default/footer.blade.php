@@ -14,5 +14,9 @@
         <p>...adding beauty to your world</p>
     </div>
 </footer>-->
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'article-ckeditor' );
+</script>
 </body>
 </html>
