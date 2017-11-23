@@ -113,6 +113,24 @@ header {
         left: 0;
       }
     }
+    .btn {
+      padding: .4em 1em;
+      border: 1px solid rgba($theme-black,.3);
+      border-radius: 2px;
+      outline: none;
+      position: relative;
+      margin-top:-7px;
+    }
+    .btn-post {
+      background: $theme-white;
+      color: $theme-red;
+      &:hover {
+        color: $theme-white;
+        border: 1px solid $theme-red;
+        background: transparent;
+        padding: .4em 1em;
+      }
+    }
   }
 }
 

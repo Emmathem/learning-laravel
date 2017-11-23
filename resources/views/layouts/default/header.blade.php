@@ -33,7 +33,7 @@
                         <li><a href="../posts">Blog</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="../posts/create">Create Post</a></li>
+                        <li><a href="../posts/create" class = "btn btn-post">Create Post</a></li>
                     </ul>
                 </nav>
                 </div>
